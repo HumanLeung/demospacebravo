@@ -1,5 +1,6 @@
 package com.example.demospacebravo.utils;
 
+import com.example.demospacebravo.Annotation.IndustryExt;
 import javassist.ClassPool;
 import org.springframework.stereotype.Component;
 
@@ -7,6 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 @Component
+@IndustryExt
 public class JavassistUtils {
 
     public void generateClass() throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
